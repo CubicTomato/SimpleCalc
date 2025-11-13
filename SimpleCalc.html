@@ -10,6 +10,30 @@
                 var number = number1 + number2;
                 document.getElementById("answer").innerHTML = number;
             }
+            //Функция вычитания
+            function Subtract() {
+                document.getElementById("operation").textContent = "-";
+                var number1 = Number(document.getElementById("number1").value);
+                var number2 = Number(document.getElementById("number2").value);
+                var number = number1 - number2;
+                document.getElementById("answer").innerHTML = number;
+            }
+            //Функция умножения
+            function Multiplication() {
+                document.getElementById("operation").textContent = "*";
+                var number1 = Number(document.getElementById("number1").value);
+                var number2 = Number(document.getElementById("number2").value);
+                var number = number1 * number2;
+                document.getElementById("answer").innerHTML = number;
+            }
+            //Функция деления
+            function Division() {
+                document.getElementById("operation").textContent = "/";
+                var number1 = Number(document.getElementById("number1").value);
+                var number2 = Number(document.getElementById("number2").value);
+                var number = number1 / number2;
+                document.getElementById("answer").innerHTML = number;
+            }
         </script>
     </head>
     <body>
