@@ -2,6 +2,13 @@
 <html>
     <head>
         <script>
+            //Функция смены знака
+            function InvertSign() {
+                if (document.getElementById("answer").textContent != NaN) {
+                    var number = (document.getElementById("answer").textContent) * -1;
+                    document.getElementById("answer").innerHTML = number;
+                }
+            }
             //Функция суммирования
             function Sum() {
                 document.getElementById("operation").textContent = "+";
