@@ -31,8 +31,12 @@
                 document.getElementById("operation").textContent = "/";
                 var number1 = Number(document.getElementById("number1").value);
                 var number2 = Number(document.getElementById("number2").value);
-                var number = number1 / number2;
-                document.getElementById("answer").innerHTML = number;
+                if (number2 != 0) {
+                    var number = number1 / number2;
+                    document.getElementById("answer").innerHTML = number;
+                } else {
+                    document.getElementById("answer").innerHTML = "Нельзя делить на нуль!";
+                }
             }
         </script>
     </head>
